@@ -1,6 +1,9 @@
 pipeline {
     agent any
 
+ environment {
+        PATH = "C:\\Users\\Bevix\\AppData\\Local\\Programs\\Python\\Python313;C:\\Users\\Bevix\\AppData\\Local\\Programs\\Python\\Python313\\Scripts;${env.PATH}"
+    }
     stages {
 
         stage('Install Dependencies') {
